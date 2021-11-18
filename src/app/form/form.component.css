@@ -1,0 +1,55 @@
+.body {
+    border-radius: 8px;
+    padding: 16px;
+    position: relative;
+    margin-bottom: 16px;
+    align-items: center;
+    margin-top: 110px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.content-box {
+    background-color: #EEE;
+    border-radius: 8px;
+    padding: 16px;
+    position: relative;
+    margin-bottom: 16px;
+    max-width: 500px;
+    margin: auto;
+}
+
+button {
+    background-color: black;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    padding: 16px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.buttons-container {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    padding: 16px;
+}
+
+.buttons-container > button {
+    margin-left: 8px;
+}
+
+input, textarea {
+    border: 2px solid black;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 16px; 
+    padding: 8px;
+}
+
+div {
+    padding: 8px;
+}

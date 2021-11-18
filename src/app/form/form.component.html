@@ -1,0 +1,46 @@
+<div class="body">
+  <div class="content-box">
+    <h2>Personal Information:</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div>
+        <label for="firstname">
+          First Name:
+        </label>
+        <input id="firstname" name="firstname" type="text" [(ngModel)]="firstname"/>
+      </div>
+      <div>
+        <label for="lastname">
+          Last Name:
+        </label>
+        <input id="lastname" name="lastname" type="text" [(ngModel)]="lastname"/>
+      </div>
+      <div>
+        <label for="address">
+          Address:
+        </label>
+        <input id="address" name="address" type="text" [(ngModel)]="address"/>
+      </div>
+      <div>
+        <label for="dateofbirth">
+          Date of Birth:
+        </label>
+        <input id="dateofbirth" name="dateofbirth" type="text" [(ngModel)]="dateofbirth"/>
+      </div>
+      <div>
+        <label for="email">
+          Email:
+        </label>
+        <input id="email" name="email" type="text" [(ngModel)]="email"/>
+      </div>
+      <div>
+        <label for="phone">
+          Phone:
+        </label>
+        <input id="phone" name="phone" type="text" [(ngModel)]="phone"/>
+      </div>
+      <div><button style="padding: 5px;">Upload ID</button>
+        <button style="padding: 5px;">Upload Insurance</button></div>
+      <div><button type="submit">Submit</button></div>
+      </form>
+  </div>
+</div>
