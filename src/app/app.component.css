@@ -6,16 +6,16 @@
     width: 100vw;
 }
 #max-width-column {
-    background-image: url("./background.png");
-    background-color: white;
-    margin: 0 auto;
-    max-width: 1500px;
-    min-height: 100vh;
-    padding: 16px;
+    background-image: url("src\assets\bgg.png");
+    background-size:100% 100%;
     position: relative;
+    height: 100vh;
+
 }
 
 
 #content-wrap {
-    padding: 10px;
+    margin: 0 auto;
+    height: 1000 px;
+    width: 640 px;
 }

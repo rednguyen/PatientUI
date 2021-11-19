@@ -1,22 +1,12 @@
-.card-style {
-    margin:auto;
-    max-width: 300px;
-}
-
-.body {
-    border-radius: 8px;
-    padding: 16px;
-    position: relative;
-    margin-bottom: 16px;
-    align-items: center;
-    margin-top: 300px;
+.space{
+    height:200px;
 }
 
 p{
     font-size: 20px;
     font-style: italic;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 2
+    line-height: 2;
 }
 
 .signature{
@@ -24,18 +14,32 @@ p{
     margin-right: 50px;
     font-size: 20px;
 }
+.card-style {
+    color: rgba(78, 146, 173, 0.404);
+    display:block;
+    width: 300px;
+    max-height:200px;
+    text-align: center;
+    padding-top:60px;
+    padding-bottom:60px;
+    margin:auto;
+    opacity: .5;
+    border-radius: ;
+     
+}
 
-button {
-    background-color: rgb(243, 243, 243);
-    border: none;
-    border-radius: 8px;
+.buttonstyle {
+    color: white;
+    border-radius: 20px;
     color: rgb(12, 8, 8);
     cursor: pointer;
     outline: none;
-    padding: 16px;
     font-family: Arial, sans-serif;
-    font-size: 25px;
+    font-size: 50px;
     width: 300px;
     height: 100px;
     font-weight: bold;
+    text-align: center;
+    
+ 
 }
