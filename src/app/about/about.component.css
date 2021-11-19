@@ -1,7 +1,13 @@
 .card-style {
-    margin: auto;
-    max-width: 800px;
-    max-height: fit-content;
+        margin:auto;
+        max-width: 750px;
+        height: fit-content;
+        background-color:rgba(174, 230, 253, 0.67);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
 }
 
 .body {
@@ -10,18 +16,40 @@
     position: relative;
     margin-bottom: 16px;
     align-items: center;
-    margin-top: 220px;
 }
 
 p{
-    font-size: 20px;
+    font-size: 15px;
     font-style: italic;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Ruda';
     line-height: 2
 }
 
 .signature{
     text-align: right;
     margin-right: 50px;
-    font-size: 20px;
+    font-size: 15px;
+    font-family: 'Ruda';
+}
+
+mat-card-title{
+    font-family: 'Ruda';
+    font-size: large;
+    text-align: center;
+}
+
+.kp-image{
+    height:100px;
+    display: block;}
+
+.meet{
+        position: relative;
+        right: 50px;
+        font-size: large;
+}
+
+.beside-img{
+    text-align: center;
+    font-size: large;
+    font-style: normal;
 }
