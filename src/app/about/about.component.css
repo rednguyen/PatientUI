@@ -46,6 +46,7 @@ mat-card-title{
         position: relative;
         right: 50px;
         font-size: large;
+        font-weight: bolder;
 }
 
 .beside-img{
@@ -53,3 +54,4 @@ mat-card-title{
     font-size: large;
     font-style: normal;
 }
+

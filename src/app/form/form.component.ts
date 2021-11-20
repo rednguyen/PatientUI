@@ -14,6 +14,10 @@ export class FormComponent implements OnInit {
     dateofbirth: string = '';
     email: string = '';
     phone: string = '';
+    reason: string ='';
+    efirstname: string = '';
+    elastname: string = '';
+    ephone: string = '';
 
   constructor(
     private router: Router
