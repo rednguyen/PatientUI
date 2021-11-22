@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Patient } from '../types';
 import { Router } from '@angular/router';
+import { PatientsService } from '../patients.service';
 
 @Component({
   selector: 'app-form',
@@ -18,17 +19,23 @@ export class FormComponent implements OnInit {
     efirstname: string = '';
     elastname: string = '';
     ephone: string = '';
-
+    patient: Patient;
+    
   constructor(
-    private router: Router
+    private router: Router,
+    private patientsService: PatientsService
   ) { }
 
   ngOnInit(): void {
   }
 
   onSubmit(): void {
-    alert('Your form has been submitted!');
-    this.router.navigateByUrl('/');
+    this.patientsService.submitForm(this.firstname,this.lastname,
+      this.address,this.dateofbirth,this.email, this.phone)
+        .subscribe(() => {
+          this.router.navigateByUrl('/');
+        })
+    
   }
 
 }
