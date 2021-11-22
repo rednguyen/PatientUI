@@ -13,6 +13,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { FormComponent } from './form/form.component';
+import { ContactComponent } from './contact/contact/contact.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { FormComponent } from './form/form.component';
     NavBarComponent,
     AboutComponent,
     HomeComponent,
-    FormComponent
+    FormComponent,
+    ContactComponent
 
   ],
   imports: [
