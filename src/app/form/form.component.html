@@ -6,123 +6,122 @@
         <label for="firstname">
           First Name:
         </label>
-        <input id="firstname" name="firstname" type="text" [(ngModel)]="firstname"/>
+        <input id="firstname" name="firstname" type="text" [(ngModel)]="firstname" />
       </div>
       <div>
         <label for="lastname">
           Last Name:
         </label>
-        <input id="lastname" name="lastname" type="text" [(ngModel)]="lastname"/>
+        <input id="lastname" name="lastname" type="text" [(ngModel)]="lastname" />
       </div>
       <div>
         <label for="address">
           Address:
         </label>
-        <input id="address" name="address" type="text" [(ngModel)]="address"/>
+        <input id="address" name="address" type="text" [(ngModel)]="address" />
       </div>
       <div>
         <label for="dateofbirth">
           Date of Birth:
         </label>
-        <input id="dateofbirth" name="dateofbirth" type="date" [(ngModel)]="dateofbirth"/>
+        <input id="dateofbirth" name="dateofbirth" type="date" [(ngModel)]="dateofbirth" />
       </div>
       <div>
         <label for="email">
           Email:
         </label>
-        <input id="email" name="email" type="email" [(ngModel)]="email"/>
+        <input id="email" name="email" type="email" [(ngModel)]="email" />
       </div>
       <div>
         <label for="phone">
           Phone:
         </label>
-        <input id="phone" name="phone" type="text" [(ngModel)]="phone"/>
+        <input id="phone" name="phone" type="text" [(ngModel)]="phone" />
       </div>
       <div>
         <label for="reason">
           Reason for Visit:
         </label>
-        <input id="reason" name="reason" type="text" [(ngModel)]="reason"/>
+        <input id="reason" name="reason" type="text" [(ngModel)]="reason" />
       </div>
       <div></div>
-<hr color="white">
+      <hr color="white">
 
       <h2 class="text">Emergency Contact:</h2>
       <div>
         <label for="efirstname">
           First Name:
         </label>
-        <input id="efirstname" name="efirstname" type="text" [(ngModel)]="efirstname"/>
+        <input id="efirstname" name="efirstname" type="text" [(ngModel)]="efirstname" />
       </div>
       <div>
         <label for="elastname">
           Last Name:
         </label>
-        <input id="elastname" name="elastname" type="text" [(ngModel)]="elastname"/>
+        <input id="elastname" name="elastname" type="text" [(ngModel)]="elastname" />
       </div>
       <div>
         <label for="ephone">
           Phone:
         </label>
-        <input id="ephone" name="ephone" type="text" [(ngModel)]="ephone"/>
+        <input id="ephone" name="ephone" type="text" [(ngModel)]="ephone" />
       </div>
       <hr color="white">
       <h2 class="text">Medical History:</h2>
-<h3 font-family="Ruda">Have you experienced any of the following?</h3>
- <div>
-  <input type="checkbox" id="Heart" name="Heart">
-  <label for="Heart">Heart Problems</label>
-</div>
-<div>
-  <input type="checkbox" id="Breathing" name="Breathing">
-  <label for="Breathing">Trouble Breathing</label>
-</div>
-<div>
-  <input type="checkbox" id="BP" name="BP">
-  <label for="BP">High/Low Blood Pressure</label>
-</div>
-<div>
-  <input type="checkbox" id="Diabetes" name="Diabetes">
-  <label for="Diabetes">Diabetes</label>
-</div>
-<div>
-  <input type="checkbox" id="Cancer" name="Cancer">
-  <label for="Cancer">Cancer</label>
-</div>
-<div><label for="Medications">List any Medications</label>
-  <textarea id="Medications" name="Medications" rows="4" cols="50"></textarea></div>
-  <div class="space"></div>
-  <div><label for="Allergies">List any Allergies</label>
-    <textarea id="Allergies" name="Allergies" rows="4" cols="50"></textarea></div>
-<div class="space"></div>
+      <h3 font-family="Ruda">Have you experienced any of the following?</h3>
+      <div>
+        <input type="checkbox" id="Heart" name="Heart">
+        <label for="Heart">Heart Problems</label>
+      </div>
+      <div>
+        <input type="checkbox" id="Breathing" name="Breathing">
+        <label for="Breathing">Trouble Breathing</label>
+      </div>
+      <div>
+        <input type="checkbox" id="BP" name="BP">
+        <label for="BP">High/Low Blood Pressure</label>
+      </div>
+      <div>
+        <input type="checkbox" id="Diabetes" name="Diabetes">
+        <label for="Diabetes">Diabetes</label>
+      </div>
+      <div>
+        <input type="checkbox" id="Cancer" name="Cancer">
+        <label for="Cancer">Cancer</label>
+      </div>
+      <div><label for="Medications">List any Medications</label>
+        <textarea id="Medications" name="Medications" rows="4" cols="50"></textarea></div>
+      <div class="space"></div>
+      <div><label for="Allergies">List any Allergies</label>
+        <textarea id="Allergies" name="Allergies" rows="4" cols="50"></textarea></div>
+      <div class="space"></div>
 
-    <hr color="white">
+      <hr color="white">
 
-    <h2 class="text">Choose a Date and Time for your Teleconsult :</h2>
-    <label for="meeting-time">Choose:</label>
-<input type="datetime-local" id="meeting-time"
-       name="meeting-time" value="2021-11-07T00:00"
-       min="2021-11-07T00:00" max="2022-06-14T00:00">
+      <h2 class="text">Choose a Date and Time for your Teleconsult :</h2>
+      <label for="meeting-time">Choose:</label>
+      <input type="datetime-local" id="meeting-time" name="meeting-time" value="2021-11-07T00:00" min="2021-11-07T00:00"
+        max="2022-06-14T00:00">
 
-  <div class="space"></div>
-  <hr color="white">
+      <div class="space"></div>
+      <hr color="white">
 
-  <h2 class="text">Upload your ID and Insurance :</h2>
-  <input class="file" type="file" id="Licence"
-  accept=".pdf,.png,.jpeg,.jpg"><label for="License">Upload you ID</label>
-  <div class="space"></div>
+      <h2 class="text">Upload your ID and Insurance :</h2>
+      <input class="file" type="file" id="Licence" accept=".pdf,.png,.jpeg,.jpg"><label for="License">Upload you
+        ID</label>
+      <div class="space"></div>
 
-  <input class="file" type="file" id="Insurance"
-  accept=".pdf,.png,.jpeg,.jpg"><label for="Insurance">Upload you Insurance</label>
+      <input class="file" type="file" id="Insurance" accept=".pdf,.png,.jpeg,.jpg"><label for="Insurance">Upload you
+        Insurance</label>
 
 
       <!-- <button style="padding: 5px;">Upload ID</button>
         <div></div>
       <button style="padding: 5px;">Upload Insurance</button> -->
-  
+
       <div class="space"></div>
 
       <button type="submit">Submit</button>
-      </form>
+    </form>
   </div>
 </div>
