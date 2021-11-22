@@ -39,7 +39,7 @@ mat-card-title{
 }
 
 .kp-image{
-    height:100px;
+    height:150px;
     display: block;}
 
 .meet{
@@ -53,5 +53,9 @@ mat-card-title{
     text-align: center;
     font-size: large;
     font-style: normal;
+}
+
+table{
+    padding: 5px;
 }
 
