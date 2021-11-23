@@ -33,6 +33,7 @@ export class FormComponent implements OnInit {
     this.patientsService.submitForm(this.firstname,this.lastname,
       this.address,this.dateofbirth,this.email, this.phone)
         .subscribe(() => {
+          alert("Successfully Submitted!");
           this.router.navigateByUrl('/');
         })
     
