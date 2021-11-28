@@ -13,11 +13,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { FormComponent } from './form/form.component';
-<<<<<<< HEAD
-import { ContactComponent } from './contact/contact.component';
-=======
 import { ContactComponent } from './contact/contact/contact.component';
->>>>>>> origin
 
 
 @NgModule({
