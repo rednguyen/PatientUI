@@ -100,8 +100,8 @@
 
     <h2 class="text">Choose a Date and Time for your Teleconsult :</h2>
     <label for="meeting-time">Choose:</label>
-<input type="datetime-local" id="meeting-time"
-       name="meeting-time" value="2021-11-07T00:00"
+<input type="datetime-local" id="meetingtime"
+       name="meetingtime" [(ngModel)]="meetingtime" value="2021-11-07T00:00"
        min="2021-11-07T00:00" max="2022-06-14T00:00">
 
   <div class="space"></div>

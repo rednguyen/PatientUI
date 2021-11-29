@@ -19,7 +19,7 @@ export class FormComponent implements OnInit {
     efirstname: string = '';
     elastname: string = '';
     ephone: string = '';
-    patient: Patient;
+    meetingtime: string =  '';
     
   constructor(
     private router: Router,
@@ -31,7 +31,7 @@ export class FormComponent implements OnInit {
 
   onSubmit(): void {
     this.patientsService.submitForm(this.firstname,this.lastname,
-      this.address,this.dateofbirth,this.email, this.phone)
+      this.address,this.dateofbirth,this.email, this.phone, this.meetingtime)
         .subscribe(() => {
           alert("Successfully Submitted!");
           this.router.navigateByUrl('/');
