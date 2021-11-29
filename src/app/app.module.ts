@@ -14,6 +14,8 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { FormComponent } from './form/form.component';
 import { ContactComponent } from './contact/contact/contact.component';
+import { SideNavComponent } from './side-nav/side-nav.component';
+import {SidebarModule} from 'ng-sidebar';
 
 
 @NgModule({
@@ -23,7 +25,8 @@ import { ContactComponent } from './contact/contact/contact.component';
     AboutComponent,
     HomeComponent,
     FormComponent,
-    ContactComponent
+    ContactComponent,
+    SideNavComponent 
 
   ],
   imports: [
@@ -34,7 +37,8 @@ import { ContactComponent } from './contact/contact/contact.component';
     MatCardModule,
     MatInputModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    SidebarModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
