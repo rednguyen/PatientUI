@@ -1,7 +1,7 @@
 .card-style {
         margin:auto;
         height: fit-content;
-        width: fit-content;
+        max-width: 75%;
         background-color:rgba(174, 230, 253, 0.67);justify-content: center;
         flex-direction: column;
         display: flex; 
