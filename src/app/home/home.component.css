@@ -1,3 +1,13 @@
+.body {
+  border-radius: 8px;
+  padding: 16px;
+  position: relative;
+  margin-bottom: 16px;
+  margin-top: 50px;
+  align-items: center;
+  height: 400px;
+}
+
 .second_div {
   left: 150px;
   top: 100px;
@@ -8,12 +18,30 @@
 }
 
 .card-style {
-  margin-top: 30px;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 40px;
-  height: fit-content;
-  background-color: rgba(174, 230, 253, 0.67);
+  margin:auto;
+  max-width: 350px;
+  height: 250px;
+  background-color:rgba(174, 230, 253, 0.67);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+   
+}
+
+button {
+  background-color: rgb(243, 243, 243);
+  border: none;
+  border-radius: 8px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  outline: none;
+  padding: 16px;
+  font-family: Ruda;
+  font-size: 20px;
+  width: 300px;
+  height: 100px;
 }
 
 .card-style2 {
@@ -42,14 +70,6 @@
 
 .award {
   display: block;
-}
-
-.body {
-  border-radius: 8px;
-  padding: 16px;
-  position: relative;
-  margin-bottom: 16px;
-  align-items: center;
 }
 
 h1 {
@@ -139,3 +159,5 @@ li {
 hr{
     width:80%;
 }
+
+
