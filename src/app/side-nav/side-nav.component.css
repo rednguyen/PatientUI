@@ -1,0 +1,51 @@
+ng-sidebar-container {
+    font-family: 'Ruda';
+
+    height: 100vh;
+}
+
+::ng-deep .ng-sidebar{
+    background-color:whitesmoke;
+    width: 300px;
+    padding: 2em 3em;
+box-shadow: 0 0 2.5em rgba(85,85,85,0.5);
+font-family: 'Ruda';
+/* font-size: 25px; */
+}
+button{
+margin-top: 10px;
+}
+#page-button{
+    margin-left: 10px;
+    padding: 0 6px 0 6px;
+    margin: 6px 8px 6px 8px;
+    min-width: 88px;
+    border-radius: 3px;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration:none;
+    border: none;
+    outline: none;
+    font-family: 'Ruda';
+
+
+}
+
+.menu{
+    margin-top: 2em;
+    display: block;
+
+}
+.menu li{
+    margin-bottom: 15px;
+    list-style: none;
+}
+.menu li a{
+    display: block;
+    width: 100%;
+}
+
+.name{
+font-weight: bolder;
+}
