@@ -1,7 +1,7 @@
 ng-sidebar-container {
   font-family: "Ruda";
-
-  height: 100vh;
+  height: 80vh;
+  text-decoration: none;
 }
 
 ::ng-deep .ng-sidebar {
@@ -18,8 +18,8 @@ ng-sidebar-container {
 button {
   margin-top: 10px;
   border: none;
-  background: -webkit-linear-gradient(80deg, #247cc4, #336bae);
-  background: linear-gradient(10deg, #247cc4, #336bae);
+  background-color: rgb(4, 19, 206, 0.63);
+  background:    rgb(4, 19, 206, 0.63);
   box-shadow: 1px 2px 22px -2px #3d3949;
   color: white;
   border-radius: 0.4em;
@@ -35,8 +35,8 @@ button {
 }
 #page-button {
   border: none;
-  background: -webkit-linear-gradient(80deg, #247cc4, #336bae);
-  background: linear-gradient(10deg, #247cc4, #336bae);
+  background-color: rgb(4, 19, 206, 0.63);
+  background:    rgb(4, 19, 206, 0.63);
   box-shadow: 1px 2px 22px -2px #3d3949;
   color: white;
   border-radius: 0.4em;
@@ -45,7 +45,7 @@ button {
   width: 20%;
   height: 20%;
   font-family: "Ruda";
-  font-size: 25px;
+  font-size: 45px;
   margin-left: 10px;
   padding: 6px 6px 6px 6px;
   margin: 6px 8px 6px 8px;
