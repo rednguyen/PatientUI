@@ -1,54 +1,71 @@
 ng-sidebar-container {
-    font-family: 'Ruda';
+  font-family: "Ruda";
 
-    height: 100vh;
+  height: 100vh;
 }
 
-::ng-deep .ng-sidebar{
-    background-color:whitesmoke;
-    width: 300px;
-    padding: 2em 3em;
-box-shadow: 0 0 2.5em rgba(85,85,85,0.5);
-font-family: 'Ruda';
-/* font-size: 25px; */
+::ng-deep .ng-sidebar {
+  /* background-color: whitesmoke; */
+  /* width: 300px; */
+  width: 20%;
+  padding: 2em 3em;
+  box-shadow: 0 0 2.5em rgba(85, 85, 85, 0.5);
+  font-family: "Ruda";
+  /* font-size: 25px; */
+  background: rgba(78, 146, 173, 0.2);
+  border-radius: 20px;
 }
-button{
-margin-top: 10px;
+button {
+  margin-top: 10px;
+  border: none;
+  background: -webkit-linear-gradient(80deg, #247cc4, #336bae);
+  background: linear-gradient(10deg, #247cc4, #336bae);
+  box-shadow: 1px 2px 22px -2px #3d3949;
+  color: white;
+  border-radius: 0.4em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  /* width: 20%;
+  height: 20%; */
+  font-family: "Ruda";
+  /* font-size: 25px; */
+  margin-left: 10px;
+  padding: 6px 6px 6px 6px;
+  margin: 6px 8px 6px 8px;
 }
-#page-button{
-
-    border: none;
-    background: -webkit-linear-gradient(80deg, #247CC4, #336BAE);
-    background: linear-gradient(10deg, #247CC4, #336BAE);
-    box-shadow: 1px 2px 22px -2px #3D3949;
-    color: white;
-    border-radius: 0.4em;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    min-width: 88px;
-    font-family: 'Ruda';
-    margin-left: 10px;
-    padding: 6px 6px 6px 6px;
-    margin: 6px 8px 6px 8px;
-
-
-
+#page-button {
+  border: none;
+  background: -webkit-linear-gradient(80deg, #247cc4, #336bae);
+  background: linear-gradient(10deg, #247cc4, #336bae);
+  box-shadow: 1px 2px 22px -2px #3d3949;
+  color: white;
+  border-radius: 0.4em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  width: 20%;
+  height: 20%;
+  font-family: "Ruda";
+  font-size: 25px;
+  margin-left: 10px;
+  padding: 6px 6px 6px 6px;
+  margin: 6px 8px 6px 8px;
 }
 
-.menu{
-    margin-top: 2em;
-    display: block;
+.menu {
+  margin-top: 8em;
+  display: block;
+}
+.menu li {
+  margin-bottom: 35px;
+  list-style: none;
+  font-size: 20px;
+}
+.menu li a {
+  display: block;
+  width: 100%;
+  color: white;
+}
 
-}
-.menu li{
-    margin-bottom: 15px;
-    list-style: none;
-}
-.menu li a{
-    display: block;
-    width: 100%;
-}
-
-.name{
-font-weight: bolder;
+.name {
+  font-weight: bolder;
 }
