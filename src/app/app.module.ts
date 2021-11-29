@@ -14,6 +14,7 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { FormComponent } from './form/form.component';
 import { ContactComponent } from './contact/contact/contact.component';
+import { PatientTestimonialsComponent } from './patient-testimonials/patient-testimonials.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ContactComponent } from './contact/contact/contact.component';
     AboutComponent,
     HomeComponent,
     FormComponent,
-    ContactComponent
+    ContactComponent,
+    PatientTestimonialsComponent
 
   ],
   imports: [
