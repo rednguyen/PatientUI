@@ -17,6 +17,7 @@ import { ContactComponent } from './contact/contact/contact.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import {SidebarModule} from 'ng-sidebar';
 import { FooterComponent } from './footer/footer.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { FooterComponent } from './footer/footer.component';
     FormComponent,
     ContactComponent,
     SideNavComponent,
-    FooterComponent 
+    FooterComponent,
+    TestimonialsComponent 
 
   ],
   imports: [
