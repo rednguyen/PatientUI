@@ -1,52 +1,141 @@
-.body {
+.second_div {
+  left: 150px;
+  top: 100px;
+  width: 700px;
+  height: 500px;
 
-    border-radius: 8px;
-
-    padding: 16px;
-
-    position: relative;
-
-    margin-bottom: 16px;
-    margin-top: 100px;
-
-    align-items: center;
 
 }
 
-p{
-    font-size: 50px;
-    font-family: 'Ruda';
-    line-height: 2;
-}
-
-.signature{
-    text-align: right;
-    margin-right: 50px;
-    font-size: 20px;
-}
 .card-style {
-    margin:auto;
-    max-width: 350px;
-    height: 250px;
-    background-color:rgba(174, 230, 253, 0.67);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 20px;
-     
+  margin-top: 30px;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 40px;
+  height: fit-content;
+  background-color: rgba(174, 230, 253, 0.67);
 }
 
-button {
-    background-color: rgb(243, 243, 243);
-    border: none;
-    border-radius: 8px;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    outline: none;
-    padding: 16px;
-    font-family: Ruda;
-    font-size: 20px;
-    width: 300px;
-    height: 100px;
+.card-style2 {
+  background-color: rgb(244, 167, 128, .88);
+  border-color: #105cf0;
+  border-width: 30px;
+}
+
+.text1 {
+  padding-left: 20px;
+  background-color: rgb(4, 19, 206, 0.63);
+  margin-left: 110px;
+  margin-top: 120px;
+  display: block;
+  position: relative;
+  bottom: 370px;
+  left: 670px;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: white;
+}
+
+.first {
+  height: 530px;
+}
+
+.award {
+  display: block;
+}
+
+.body {
+  border-radius: 8px;
+  padding: 16px;
+  position: relative;
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+h1 {
+  font-size: 40px;
+  font-style: bold;
+  font-family: 'Ruda';
+  line-height: 2;
+  margin-bottom: 0px;
+}
+
+.p1 {
+  font-size: 15px;
+  font-family: 'Ruda';
+  font-style: italic;
+}
+
+.p2 {
+  text-align: center;
+  font-family: 'Outfit', sans-serif;
+}
+
+mat-card-title {
+  font-family: 'Ruda';
+  font-size: large;
+  text-align: center;
+}
+
+
+.img {
+  border-radius: 10px;
+  height: 500px;
+}
+
+.reach {
+  text-align: center;
+  font-family: 'Ruda';
+}
+
+.footer {
+  border-width: 5px;
+  background-image: "\assets\bgg.png";
+  border-style: solid;
+  border-color: rgba(174, 230, 253, 0.67);
+  background-color: rgb(4, 19, 206, 0.83);
+  border-radius: 5px;
+}
+
+.footer_div {
+  padding-left: 45px;
+
+  font-size: 30px;
+  color: white;
+  border-radius: 2px;
+  border-style: solid;
+  border-color: rgba(174, 230, 253, 0.67);
+}
+
+.footertext {
+  padding-top: 20px;
+  font-family: 'Ruda';
+  font-size: 30px;
+}
+
+.footertext2 {
+  font-family: 'Ruda';
+  font-size: 15px;
+}
+
+.item {
+  display: inline-block;
+  height: 20px;
+  padding: 5px 10px;
+}
+
+ul {
+  padding-left: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+
+}
+
+hr{
+    width:80%;
 }
