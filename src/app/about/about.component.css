@@ -1,11 +1,10 @@
 .card-style {
         margin:auto;
-        max-width: 750px;
         height: fit-content;
-        background-color:rgba(174, 230, 253, 0.67);
-        display: flex;
-        justify-content: center;
+        width: fit-content;
+        background-color:rgba(174, 230, 253, 0.67);justify-content: center;
         flex-direction: column;
+        display: flex; 
         align-items: center;
         border-radius: 20px;
 }
@@ -39,7 +38,7 @@ mat-card-title{
 }
 
 .kp-image{
-    height:100px;
+    height:150px;
     display: block;}
 
 .meet{
@@ -53,5 +52,9 @@ mat-card-title{
     text-align: center;
     font-size: large;
     font-style: normal;
+}
+
+table{
+    padding: 5px;
 }
 
