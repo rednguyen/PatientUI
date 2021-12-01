@@ -1,127 +1,4 @@
-#page-wrap {
-    background-color: #EEE;
-}
-#max-width-column {
-    background-image: url("src\assets\bgg.png");
-    background-size:100% 100%;
-    position: relative;
-}
-#content-wrap {
-    margin: 0 auto;
-    height: 1000 px;
-    width: 640 px;
-}
 
-.body {
-    border-radius: 8px;
-    padding: 16px;
-    position: relative;
-    margin-bottom: 16px;
-    margin-top: 50px;
-    align-items: center;
-    height: 400px;
-  }
-  
-  .second_div {
-    left: 150px;
-    top: 100px;
-    width: 700px;
-    height: 500px;
-  
-  
-  }
-  
-  .card-style {
-    margin:auto;
-    max-width: 350px;
-    height: 250px;
-    background-color:rgba(174, 230, 253, 0.67);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 20px;
-     
-  }
-  
-  button {
-    background-color: rgb(243, 243, 243);
-    border: none;
-    border-radius: 8px;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    outline: none;
-    padding: 16px;
-    font-family: Ruda;
-    font-size: 20px;
-    width: 300px;
-    height: 100px;
-  }
-  
-  .card-style2 {
-    background-color: rgb(244, 167, 128, .88);
-    border-color: #105cf0;
-    border-width: 30px;
-  }
-  
-  .text1 {
-    padding-left: 20px;
-    background-color: rgb(4, 19, 206, 0.63);
-    margin-left: 110px;
-    margin-top: 120px;
-    display: block;
-    position: relative;
-    bottom: 370px;
-    left: 670px;
-    border-radius: 20px;
-    border-style: solid;
-    border-color: white;
-  }
-  
-  .first {
-    height: 530px;
-  }
-  
-  .award {
-    display: block;
-  }
-  
-  h1 {
-    font-size: 40px;
-    font-style: bold;
-    font-family: 'Ruda';
-    line-height: 2;
-    margin-bottom: 0px;
-  }
-  
-  .p1 {
-    font-size: 15px;
-    font-family: 'Ruda';
-    font-style: italic;
-  }
-  
-  .p2 {
-    text-align: center;
-    font-family: 'Outfit', sans-serif;
-  }
-  
-  mat-card-title {
-    font-family: 'Ruda';
-    font-size: large;
-    text-align: center;
-  }
-  
-  
-  .img {
-    border-radius: 10px;
-    height: 500px;
-  }
-  
-  .reach {
-    text-align: center;
-    font-family: 'Ruda';
-  }
-  
   .footer {
     border-width: 5px;
     background-image: "\assets\bgg.png";
@@ -133,7 +10,6 @@
   
   .footer_div {
     padding-left: 45px;
-  
     font-size: 30px;
     color: white;
     border-radius: 2px;
@@ -142,14 +18,12 @@
   }
   
   .footertext {
-    padding-left: 1400px;
     padding-top: 20px;
     font-family: 'Ruda';
     font-size: 30px;
   }
   
   .footertext2 {
-    padding-left: 1400px;
     font-family: 'Ruda';
     font-size: 15px;
   }
@@ -161,7 +35,6 @@
   }
   
   ul {
-    padding-left: 1400px;
     padding-top: 0px;
     margin-top: 0px;
     list-style-type: none;
