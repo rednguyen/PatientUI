@@ -24,7 +24,7 @@ export class PatientsService {
   submitForm(firstname: string, lastname: string, address: string, dateofbirth: string, 
     email:string, phone: string, meetingtime: string): Observable<Patient>{
     console.log(phone)
-    return this.http.post<Patient>('/api/Patients',
+    return this.http.post<Patient>('https://localhost:44337/api/Patients',
     {
       "firstname": firstname,
       "lastname": lastname,

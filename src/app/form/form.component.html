@@ -1,42 +1,42 @@
 <div class="body">
   <div class="content-box">
     <h2 class="text">Personal Information:</h2>
-    <form (ngSubmit)="onSubmit()">
+    <form novalidate #form="ngForm"  (ngSubmit)="onSubmit()">
       <div>
         <label for="firstname">
-          First Name:
+          *First Name:
         </label>
-        <input id="firstname" name="firstname" type="text" [(ngModel)]="firstname" />
+        <input id="firstname" name="firstname" type="text" [(ngModel)]="firstname" class="form-control" #name="ngModel" required  />
       </div>
       <div>
         <label for="lastname">
-          Last Name:
+          *Last Name:
         </label>
-        <input id="lastname" name="lastname" type="text" [(ngModel)]="lastname" />
+        <input id="lastname" name="lastname" type="text" [(ngModel)]="lastname" class="form-control" #name="ngModel" required  />
       </div>
       <div>
         <label for="address">
-          Address:
+          *Address:
         </label>
-        <input id="address" name="address" type="text" [(ngModel)]="address" />
+        <input id="address" name="address" type="text" [(ngModel)]="address" class="form-control" #name="ngModel" required />
       </div>
       <div>
-        <label for="dateofbirth">
-          Date of Birth:
+        <label for="DOB">
+          *Date of Birth:
         </label>
-        <input id="dateofbirth" name="dateofbirth" type="date" [(ngModel)]="dateofbirth" />
+        <input id="DOB" name="DOB" type="date" [(ngModel)]="DOB"class="form-control" #name="ngModel" required  />
       </div>
       <div>
         <label for="email">
-          Email:
+          *Email:
         </label>
-        <input id="email" name="email" type="email" [(ngModel)]="email" />
+        <input id="email" name="email" type="email" [(ngModel)]="email" class="form-control" #name="ngModel" required />
       </div>
       <div>
         <label for="phone">
-          Phone:
+          *Phone:
         </label>
-        <input id="phone" name="phone" type="text" [(ngModel)]="phone" />
+        <input id="phone" name="phone" type="text" [(ngModel)]="phone" class="form-control" #name="ngModel" required />
       </div>
       <div>
         <label for="reason">
@@ -122,7 +122,7 @@
 
       <div class="space"></div>
 
-      <button type="submit" value="submit">Submit</button>
+      <button type="submit" value="submit" [disabled]="form.invalid">Submit</button>
       
       </form>
   </div>

@@ -12,7 +12,7 @@ export class FormComponent implements OnInit {
     firstname: string = '';
     lastname: string = '';
     address: string = '';
-    dateofbirth: string = '';
+    DOB: string = '';
     email: string = '';
     phone: string = '';
     reason: string ='';
@@ -31,7 +31,7 @@ export class FormComponent implements OnInit {
 
   onSubmit(): void {
     this.patientsService.submitForm(this.firstname,this.lastname,
-      this.address,this.dateofbirth,this.email, this.phone, this.meetingtime)
+      this.address,this.DOB,this.email, this.phone, this.meetingtime)
         .subscribe(() => {
           alert("Successfully Submitted!");
           this.router.navigateByUrl('/');
