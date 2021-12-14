@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Patient } from './types';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { appt } from './appt';
 
 
 const httpOptions = {
@@ -22,17 +23,21 @@ export class PatientsService {
   ) { }
 
   submitForm(firstname: string, lastname: string, address: string, dateofbirth: string, 
-    email:string, phone: string, meetingtime: string): Observable<Patient>{
-    console.log(phone)
-    return this.http.post<Patient>('/api/Patients',
+    phone: string): Observable<Patient>{
+    return this.http.post<Patient>('https://localhost:44337/api/patients',
     {
-      "firstname": firstname,
-      "lastname": lastname,
+      "fname": firstname,
+      "lname": lastname,
       "address": address,
-      "dateofbirth": dateofbirth,
-      "email": email,
+      "DOB": dateofbirth,
       "phone": phone,
-      "meetingtime": meetingtime,
+    });
+  }
+
+  submitAppt(meetingtime: string):  Observable<appt>{
+    return this.http.post<appt>('https://localhost:44337/api/appts',
+    {
+      "date_time": meetingtime
     });
   }
 }

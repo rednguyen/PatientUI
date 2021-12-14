@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Patient } from '../types';
 import { Router } from '@angular/router';
 import { PatientsService } from '../patients.service';
+import { appt } from '../appt';
 
 @Component({
   selector: 'app-form',
@@ -9,17 +10,18 @@ import { PatientsService } from '../patients.service';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
-    firstname: string = '';
-    lastname: string = '';
+    pID: string = '';
+    fname: string = '';
+    lname: string = '';
     address: string = '';
-    dateofbirth: string = '';
-    email: string = '';
+    DOB: string = '';
     phone: string = '';
-    reason: string ='';
-    efirstname: string = '';
-    elastname: string = '';
-    ephone: string = '';
-    meetingtime: string =  '';
+    meetingtime: string = '';
+    appt: appt[];
+    reason: '';
+    efirstname: '';
+    elastname: '';
+    ephone: '';
     
   constructor(
     private router: Router,
@@ -30,8 +32,14 @@ export class FormComponent implements OnInit {
   }
 
   onSubmit(): void {
-    this.patientsService.submitForm(this.firstname,this.lastname,
-      this.address,this.dateofbirth,this.email, this.phone, this.meetingtime)
+    this.patientsService.submitForm(this.fname,this.lname,
+      this.address,this.DOB, this.phone)
+      .subscribe(() => {
+        alert("Successfully Submitted!");
+        this.router.navigateByUrl('/');
+      })
+
+    this.patientsService.submitAppt(this.meetingtime)
         .subscribe(() => {
           alert("Successfully Submitted!");
           this.router.navigateByUrl('/');

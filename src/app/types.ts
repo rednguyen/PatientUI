@@ -1,9 +1,13 @@
+
+import { appt } from "./appt";
+
 export interface Patient {
-    firstname: string,
-    lastname: string,
+    appts: appt[],
+    pID: number,
+    fname: string,
+    lname: string,
     address: string,
-    dateofbirth: string,
-    email: string,
-    phone:string,
-    meetingtime: string,
+    phone: string,
+    DOB: string,
 }
+
