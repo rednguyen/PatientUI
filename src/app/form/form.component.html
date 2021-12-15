@@ -1,30 +1,43 @@
 <div class="body">
   <div class="content-box">
     <h2 class="text">Personal Information:</h2>
-    <form (ngSubmit)="onSubmit()">
+    <form [formGroup]="form"(ngSubmit)="onSubmit()" novalidate>
       <div>
         <label for="fname">
           First Name:
         </label>
-        <input id="fname" name="fname" type="text" [(ngModel)]="fname" />
+        <input id="fname" name="fname" type="text" formControlName="fname" [(ngModel)]="fname" [ngClass]="{ 'is-invalid': submitted && f['fname'].errors}"/>
+        <div *ngIf="submitted && f['fname'].errors" class="invalid-feedback">
+          <div style="text-align: center; margin-top: -15px;" *ngIf="f['fname'].errors['required']">First Name is required</div>
+        </div>
       </div>
       <div>
         <label for="lname">
           Last Name:
         </label>
-        <input id="lname" name="lname" type="text" [(ngModel)]="lname" />
+        <input formControlName="lname" id="lname" name="lname" type="text" [(ngModel)]="lname" [ngClass]="{ 'is-invalid': submitted && f['lname'].errors}"/>
+        <div *ngIf="submitted && f['lname'].errors" class="invalid-feedback">
+          <div style="text-align: center; margin-top: -15px;" *ngIf="f['lname'].errors['required']">Last Name is required</div>
+        </div>
       </div>
       <div>
         <label for="address">
           Address:
         </label>
-        <input id="address" name="address" type="text" [(ngModel)]="address" />
+        <input formControlName="address" id="address" name="address" type="text" [(ngModel)]="address" [ngClass]="{ 'is-invalid': submitted && f['address'].errors}"/>
+        <div *ngIf="submitted && f['address'].errors" class="invalid-feedback">
+          <div style="text-align: center; margin-top: -15px;" *ngIf="f['address'].errors['required']">Address is required</div>
+        </div>
       </div>
       <div>
         <label for="DOB">
           Date of Birth:
         </label>
-        <input id="DOB" name="DOB" type="date" [(ngModel)]="DOB" />
+        <input id="DOB" name="DOB" formControlName="DOB" type="date" [(ngModel)]="DOB" [ngClass]="{ 'is-invalid': submitted && f['DOB'].errors}" />
+        <div *ngIf="submitted && f['DOB'].errors" class="invalid-feedback">
+          <div style="text-align: center; margin-top: -15px;" *ngIf="f['DOB'].errors['required']">Date of Birth is required</div>
+          <div  style="text-align: center; margin-top: -15px;"  *ngIf="f['DOB'].errors['pattern']">Date of Birth must be a valid date in the format YYYY-MM-DD</div>
+        </div>
       </div>
       <!-- <div>
         <label for="email">
@@ -36,13 +49,20 @@
         <label for="phone">
           Phone:
         </label>
-        <input id="phone" name="phone" type="text" [(ngModel)]="phone" />
+        <input formControlName="phone" id="phone" name="phone" type="text" [(ngModel)]="phone" [ngClass]="{ 'is-invalid': submitted && f['phone'].errors}" />
+        <div *ngIf="submitted && f['phone'].errors" class="invalid-feedback">
+          <div  style="text-align: center; margin-top: -15px;" *ngIf="f['phone'].errors['required']">Mobile Number is required</div>
+          <div style="text-align: center; margin-top: -15px;" *ngIf="f['phone'].errors['pattern']">Please, Enter 10 digit Mobile Number></div>
+        </div>
       </div>
       <div>
         <label for="reason">
           Reason for Visit:
         </label>
-        <input id="reason" name="reason" type="text" [(ngModel)]="reason" />
+        <input formControlName="reason" id="reason" name="reason" type="text" [(ngModel)]="reason" [ngClass]="{ 'is-invalid': submitted && f['reason'].errors}" />
+        <div *ngIf="submitted && f['reason'].errors" class="invalid-feedback">
+          <div  style="text-align: center; margin-top: -15px;" *ngIf="f['reason'].errors['required']">Reason to visit is required</div>
+        </div>
       </div>
       <div></div>
       <hr color="white">
@@ -52,19 +72,31 @@
         <label for="efirstname">
           First Name:
         </label>
-        <input id="efirstname" name="efirstname" type="text" [(ngModel)]="efirstname" />
+        <input  formControlName="efirstname" id="efirstname" name="efirstname" type="text" [(ngModel)]="efirstname" [ngClass]="{ 'is-invalid': submitted && f['efirstname'].errors}"/>
+        <div *ngIf="submitted && f['efirstname'].errors" class="invalid-feedback">
+          <div style="text-align: center; margin-top: -15px;" *ngIf="f['efirstname'].errors['required']">First Name is required</div>
+
+        </div>
       </div>
       <div>
         <label for="elastname">
           Last Name:
         </label>
-        <input id="elastname" name="elastname" type="text" [(ngModel)]="elastname" />
+        <input formControlName="elastname" id="elastname" name="elastname" type="text" [(ngModel)]="elastname" [ngClass]="{ 'is-invalid': submitted && f['elastname'].errors}"/>
+        <div *ngIf="submitted && f['elastname'].errors" class="invalid-feedback">
+          <div style="text-align: center; margin-top: -15px;" *ngIf="f['elastname'].errors['required']">Last Name is required</div>
+
+        </div>
       </div>
       <div>
         <label for="ephone">
           Phone:
         </label>
-        <input id="ephone" name="ephone" type="text" [(ngModel)]="ephone" />
+        <input formControlName="ephone" id="ephone" name="ephone" type="text" [(ngModel)]="ephone" [ngClass]="{ 'is-invalid': submitted && f['ephone'].errors}" />
+        <div *ngIf="submitted && f['ephone'].errors" class="invalid-feedback">
+          <div style="text-align: center; margin-top: -15px;" *ngIf="f['ephone'].errors['required']">Mobile Number is required</div>
+          <div style="text-align: center; margin-top: -15px;" *ngIf="f['ephone'].errors['pattern']">Please, Enter 10 digit Mobile Number></div>
+        </div>
       </div>
       <hr color="white">
       <h2 class="text">Medical History:</h2>
@@ -100,9 +132,12 @@
 
     <h2 class="text">Choose a Date and Time for your Teleconsult :</h2>
     <label for="meeting-time">Choose:</label>
-<input type="datetime-local" id="meetingtime"
+<input type="datetime-local" formControlName="meetingtime" id="meetingtime"
        name="meetingtime" [(ngModel)]="meetingtime" value="2021-11-07T00:00"
-       min="2021-11-07T00:00" max="2022-06-14T00:00">
+       min="2021-11-07T00:00" max="2022-06-14T00:00" [ngClass]="{ 'is-invalid': submitted && f['meetingtime'].errors }" >
+      <div *ngIf="submitted && f['meetingtime'].errors" class="invalid-feedback">
+        <div style="text-align: center; margin-top: -15px;" *ngIf="f['meetingtime'].errors['required']">Meeting Time is required</div>
+      </div>
 
       <div class="space"></div>
       <hr color="white">
